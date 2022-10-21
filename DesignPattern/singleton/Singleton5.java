@@ -13,6 +13,6 @@ public class Singleton5 {
     }
 
     private static class SingletonHolder {
-        private static Singleton5 instance = new Singleton5();
+        private static final Singleton5 instance = new Singleton5();
     }
 }
