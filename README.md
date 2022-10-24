@@ -1,4 +1,5 @@
 自己学习设计模式时，所整理的代码案例，参考自[DesignPattern](https://github.com/youlookwhat/DesignPattern)
+
 下面用一个图片来整体描述一下设计模式之间的关系:
 ![](https://www.runoob.com/wp-content/uploads/2014/08/the-relationship-between-design-patterns.jpg)
 
