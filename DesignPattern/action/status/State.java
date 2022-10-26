@@ -4,20 +4,20 @@ public interface State {
     /**
      * 放钱
      */
-    public void insertMoney();
+    void insertMoney();
 
     /**
      * 退钱
      */
-    public void backMoney();
+    void backMoney();
 
     /**
      * 转动曲柄
      */
-    public void turnCrank();
+    void turnCrank();
 
     /**
      * 出商品
      */
-    public void dispense();
+    void dispense();
 }

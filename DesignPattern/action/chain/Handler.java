@@ -1,6 +1,10 @@
 package action.chain;
 
 public abstract class Handler {
+    /**
+     * 这里的这个常量你可以搞成一个enum，
+     * 这里为了方便就直接使用了protected关键字来让子类共享常量
+     */
     protected static final int NUM_ONE = 1;
     protected static final int NUM_THREE = 3;
     protected static final int NUM_SEVEN = 7;
@@ -14,6 +18,7 @@ public abstract class Handler {
     //设置请假天数范围 上不封顶
     protected Handler(int numStart) {
         this.numStart = numStart;
+        this.numEnd = Integer.MAX_VALUE;
     }
 
     //设置请假天数范围
@@ -29,7 +34,8 @@ public abstract class Handler {
 
     //提交请假条
     public void submit(LeaveRequest leaveRequest) {
-        if (numStart <= 0) {
+        if (numStart <= 0 && leaveRequest.getNum() <= 0) {
+            System.out.println("无法处理该请求");
             return;
         }
 

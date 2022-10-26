@@ -7,7 +7,7 @@ public class ProxyFactory {
         return Proxy.newProxyInstance(
                 targetObject.getClass().getClassLoader(),
                 targetObject.getClass().getInterfaces(),
-                new MyInvocationHandler(targetObject)
+                (proxy, method, args) -> method.invoke(targetObject, args)
         );
 
     }

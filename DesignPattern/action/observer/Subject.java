@@ -19,5 +19,5 @@ public interface Subject {
     /**
      * 通知所有的观察着
      */
-    public void notifyObservers();
+    public void notifyObservers(String msg);
 }

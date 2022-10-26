@@ -1,12 +1,12 @@
 package action.observer;
 
 public class Observer1 implements Observer {
-    private Subject subject;
+    private String name;
 
-    public Observer1(Subject subject) {
-        this.subject = subject;
-        subject.registerObserver(this);
+    public Observer1(String name) {
+        this.name = name;
     }
+
 
     @Override
     public void update(String msg) {

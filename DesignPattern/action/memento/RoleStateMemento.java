@@ -1,5 +1,8 @@
-package action.memento.whiteBox;
+package action.memento;
 
+/**
+ * 这里也可以将这个类放到GameRole里面，使其成为私有的内部类
+ */
 public class RoleStateMemento {
     private int vit;
     private int atk;
@@ -22,4 +25,5 @@ public class RoleStateMemento {
     public int getDef() {
         return def;
     }
+
 }

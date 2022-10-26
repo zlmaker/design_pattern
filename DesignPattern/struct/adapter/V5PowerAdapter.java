@@ -14,7 +14,7 @@ public class V5PowerAdapter implements V5Power {
     @Override
     public int provideV5Power() {
         int power = v220Power.provideV220Power();
-        //power经过各种操作-->5
+        //power经过各种操作将电压降成 5v
         System.out.println("适配器：当前电压为" + power + "，我悄悄的适配了电压，将其转为5v了");
         return 5;
     }

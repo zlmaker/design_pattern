@@ -26,9 +26,8 @@ public class WinnerState implements State {
     public void dispense() {
         System.out.println("你中奖了，恭喜你，将得到2件商品");
         machine.dispense();
-
-        if (machine.getCount() == 0) {
-            System.out.println("商品已经售罄");
+        if (machine.getCount() <= 0) {
+            System.out.println("抱歉商品已经售罄，无法获得第二件商品");
             machine.setCurrentState(machine.getSoldOutState());
         } else {
             machine.dispense();

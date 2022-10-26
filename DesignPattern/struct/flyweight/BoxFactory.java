@@ -20,11 +20,11 @@ public class BoxFactory {
         return SingletonHolder.instance;
     }
 
-    public Box getBox(String key) {
+    public synchronized Box getBox(String key) {
         return boxMap.get(key);
     }
 
-    public static final class SingletonHolder {
+    private static final class SingletonHolder {
         private static final BoxFactory instance = new BoxFactory();
     }
 }

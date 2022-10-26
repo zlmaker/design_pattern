@@ -1,4 +1,4 @@
-package action.memento.whiteBox;
+package action.memento;
 
 public class GameRole {
     private int vit; //生命力

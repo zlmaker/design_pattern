@@ -90,4 +90,12 @@ public class VendingMachine {
             count -= 1;
         }
     }
+
+    public State getHasMoneyState() {
+        return hasMoneyState;
+    }
+
+    public void setHasMoneyState(State hasMoneyState) {
+        this.hasMoneyState = hasMoneyState;
+    }
 }

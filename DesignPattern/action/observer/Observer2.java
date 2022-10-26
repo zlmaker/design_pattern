@@ -1,11 +1,10 @@
 package action.observer;
 
 public class Observer2 implements Observer {
-    private Subject subject;
+    private String name;
 
-    public Observer2(Subject subject) {
-        this.subject = subject;
-        subject.registerObserver(this);
+    public Observer2(String name) {
+        this.name = name;
     }
 
     @Override

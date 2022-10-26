@@ -6,11 +6,11 @@ import java.util.Map;
 public class Context {
     private Map<Variable, Integer> map = new HashMap<>();
 
-    public void assign(Variable var, Integer value) {
-        map.put(var, value);
+    public void assign(Variable variable, int value) {
+        map.put(variable, value);
     }
 
-    public int getValue(Variable var) {
-        return map.get(var);
+    public int getValue(Variable variable) {
+        return map.get(variable);
     }
 }

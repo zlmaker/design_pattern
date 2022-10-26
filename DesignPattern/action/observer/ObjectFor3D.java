@@ -5,7 +5,6 @@ import java.util.List;
 
 public class ObjectFor3D implements Subject {
     private List<Observer> observers = new ArrayList<>();
-    private String msg;
 
     /**
      * 注册一个观察着
@@ -31,21 +30,9 @@ public class ObjectFor3D implements Subject {
      * 通知所有的观察着
      */
     @Override
-    public void notifyObservers() {
+    public void notifyObservers(String msg) {
         for (Observer observer : observers) {
             observer.update(msg);
         }
     }
-
-    /**
-     * 主题更新消息
-     *
-     * @param msg
-     */
-    public void setMsg(String msg) {
-        this.msg = msg;
-
-        notifyObservers();
-    }
-
 }

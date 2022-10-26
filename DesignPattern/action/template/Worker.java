@@ -1,5 +1,8 @@
 package action.template;
 
+/**
+ * 这个就相当于一个模板，将共有的提取出来，将不共有的方法设为抽象
+ */
 public abstract class Worker {
     protected String name;
 

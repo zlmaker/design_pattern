@@ -10,6 +10,6 @@ public class ITWorker extends Worker {
      */
     @Override
     public void work() {
-        System.out.println(name + "写程序-测bug-fix bug");
+        System.out.println(name + "写程序-测bug-修bug");
     }
 }

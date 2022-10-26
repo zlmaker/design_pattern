@@ -13,6 +13,7 @@ public class OfoBuilder extends Builder {
 
     @Override
     public Bike createBike() {
+        // 会经过一系列的组装和加工，然后返回自行车
         return bike;
     }
 }

@@ -1,4 +1,4 @@
-package action.memento.whiteBox;
+package action.memento;
 
 public class RoleStateCaretaker {
     private RoleStateMemento roleStateMemento;

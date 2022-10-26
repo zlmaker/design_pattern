@@ -14,8 +14,7 @@ public class NoMoneyState implements State {
     @Override
     public void insertMoney() {
         System.out.println("投币成功");
-        machine.setCurrentState(machine.getNoMoneyState());
-
+        machine.setCurrentState(machine.getHasMoneyState());
     }
 
     /**

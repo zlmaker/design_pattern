@@ -34,7 +34,7 @@ public class HasMoneyState implements State {
     public void turnCrank() {
         System.out.println("你转动了手柄");
         int winner = random.nextInt(10);
-        if (winner == 0 && machine.getCount() > 1) {
+        if (winner == 0 && machine.getCount() > 0) {
             machine.setCurrentState(machine.getWinnerState());
         } else {
             machine.setCurrentState(machine.getSoldState());
